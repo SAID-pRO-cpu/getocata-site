@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ocatagroup — AI ticket triage for SaaS support teams</title>
+  <meta name="description" content="AI ticket triage and L1 draft responses for SaaS support teams. 2 weeks to live. If handle time doesn't drop 25% in month 1, you don't pay the monthly." />
+  <meta name="author" content="Said Belakbir" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ocatagroup — AI ticket triage for SaaS support teams" />
+  <meta property="og:description" content="2 weeks to live. Handle time drops 25%+ in month 1 or the monthly doesn't activate." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://getocata.com" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ocatagroup — AI ticket triage for SaaS support teams" />
+  <meta name="twitter:description" content="2 weeks to live. Handle time drops 25%+ in month 1 or the monthly doesn't activate." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ["Inter", "ui-sans-serif", "system-ui"] },
+          colors: {
+            ink: { 900: "#0b0f14", 800: "#111821", 700: "#1c2430", 600: "#2a3544" },
+            accent: { 500: "#0ea5a4", 600: "#0b8f8e", 700: "#087977" }
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: "Inter", ui-sans-serif, system-ui, sans-serif; }
+    .grain::before {
+      content: "";
+      position: absolute; inset: 0;
+      background-image: radial-gradient(rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 3px 3px;
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body class="bg-ink-900 text-slate-100 antialiased">
+
+  <!-- Nav -->
+  <nav class="max-w-5xl mx-auto px-6 py-6 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-2">
+      <div class="w-7 h-7 rounded-md bg-accent-500 flex items-center justify-center font-bold text-ink-900">O</div>
+      <span class="font-semibold tracking-tight">Ocatagroup</span>
+    </a>
+    <div class="flex items-center gap-4 text-sm text-slate-300">
+      <a href="#what" class="hover:text-white hidden sm:inline">What it does</a>
+      <a href="#guarantee" class="hover:text-white hidden sm:inline">Guarantee</a>
+      <a href="#pricing" class="hover:text-white hidden sm:inline">Pricing</a>
+      <a href="https://cal.com/said-belakbir/discovery" class="bg-accent-500 text-ink-900 font-semibold px-4 py-2 rounded-md hover:bg-accent-600">Book 15 min →</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <div class="grain relative max-w-5xl mx-auto px-6 pt-16 pb-20 sm:pt-24 sm:pb-28">
+      <p class="text-accent-500 font-medium text-sm tracking-wide uppercase mb-5">AI support automation · built by a working L2 engineer</p>
+      <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-tight max-w-4xl">
+        AI ticket triage for SaaS support teams.
+        <span class="text-slate-400">Live in 2 weeks.</span>
+      </h1>
+      <p class="mt-6 text-lg sm:text-xl text-slate-300 max-w-3xl leading-relaxed">
+        I plumb an AI layer between your helpdesk and your L1 team — auto-categorization, draft responses, escalation flags.
+        <span class="text-white font-semibold">If handle time doesn't drop 25% in month 1, you don't pay the monthly.</span>
+      </p>
+      <div class="mt-10 flex flex-wrap gap-4">
+        <a href="https://cal.com/said-belakbir/discovery" class="bg-accent-500 text-ink-900 font-semibold px-6 py-3 rounded-md hover:bg-accent-600">Book a 15-min call →</a>
+        <a href="mailto:said@getocata.com" class="border border-slate-600 text-slate-200 px-6 py-3 rounded-md hover:border-slate-400">said@getocata.com</a>
+      </div>
+      <p class="mt-8 text-sm text-slate-500">Works with Zendesk · Intercom · HelpScout · Freshdesk</p>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="border-t border-slate-800">
+    <div class="max-w-5xl mx-auto px-6 py-20 grid md:grid-cols-3 gap-10">
+      <div>
+        <h2 class="text-2xl font-bold tracking-tight">Who I am</h2>
+      </div>
+      <div class="md:col-span-2 space-y-5 text-slate-300 leading-relaxed">
+        <p>I'm <span class="text-white font-semibold">Said Belakbir</span>. I run L2 support for a US SaaS company full-time. I've spent 10+ years building data pipelines and automation — SAP, Pentaho, Python, and most recently Claude API work for my own support team.</p>
+        <p>I built this triage layer for my own team first because I was tired of watching L1s copy-paste from Notion macros. It cut our handle time by ~40% in the first month. Now I set it up for other SaaS support teams that want the same result without ripping out their existing helpdesk.</p>
+        <p>Based in Casablanca, Morocco. I work US hours for US clients. Most never notice where I'm sitting.</p>
+        <p class="text-sm text-slate-500">LinkedIn profile link goes here once you publish.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- What it does -->
+  <section id="what" class="border-t border-slate-800 bg-ink-800">
+    <div class="max-w-5xl mx-auto px-6 py-20">
+      <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-12">What it does</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-ink-700 rounded-xl p-7">
+          <div class="text-3xl mb-4">🏷️</div>
+          <h3 class="text-xl font-semibold mb-3">Auto-categorization</h3>
+          <p class="text-slate-300 leading-relaxed">Every ticket gets tagged for intent, priority, product area, and L1/L2/L3 routing. 85%+ accuracy on first pass, tuned weekly on your actual ticket history.</p>
+        </div>
+        <div class="bg-ink-700 rounded-xl p-7">
+          <div class="text-3xl mb-4">✍️</div>
+          <h3 class="text-xl font-semibold mb-3">L1 draft responses</h3>
+          <p class="text-slate-300 leading-relaxed">For every L1-eligible ticket, a first response is pre-drafted in the agent's ticket view. Agent edits and sends. Nothing auto-sends without a human — ever.</p>
+        </div>
+        <div class="bg-ink-700 rounded-xl p-7">
+          <div class="text-3xl mb-4">🚨</div>
+          <h3 class="text-xl font-semibold mb-3">Escalation flags</h3>
+          <p class="text-slate-300 leading-relaxed">Churn-risk language, compliance triggers, payment failures — flagged the moment they hit the helpdesk, not 3 hours later.</p>
+        </div>
+      </div>
+      <p class="mt-10 text-slate-400 max-w-3xl">Built on your existing Zendesk / Intercom / HelpScout / Freshdesk via webhooks. No platform lock-in. No rip-and-replace.</p>
+    </div>
+  </section>
+
+  <!-- The Guarantee -->
+  <section id="guarantee" class="border-t border-slate-800 bg-gradient-to-br from-accent-700 to-accent-600">
+    <div class="max-w-5xl mx-auto px-6 py-24 text-center">
+      <p class="text-accent-100 font-medium tracking-wide uppercase mb-6 text-sm">The guarantee</p>
+      <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight max-w-4xl mx-auto">
+        If your handle time doesn't drop <span class="underline decoration-white decoration-4">25% or more</span> in month 1, the $497/mo doesn't activate.
+      </h2>
+      <p class="mt-8 text-lg text-accent-50 max-w-2xl mx-auto leading-relaxed">You keep the system. We part clean. No hard feelings. Measured against your own 30-day baseline captured before go-live.</p>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="border-t border-slate-800">
+    <div class="max-w-5xl mx-auto px-6 py-20">
+      <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-12">What it costs</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-ink-800 border border-slate-700 rounded-xl p-8">
+          <p class="text-slate-400 text-sm uppercase tracking-wide font-medium mb-2">Setup</p>
+          <p class="text-5xl font-extrabold mb-6">$2,500<span class="text-xl text-slate-400 font-medium"> one-time</span></p>
+          <ul class="space-y-3 text-slate-300">
+            <li class="flex gap-3"><span class="text-accent-500">✓</span>2-week integration</li>
+            <li class="flex gap-3"><span class="text-accent-500">✓</span>500-ticket categorization tuning</li>
+            <li class="flex gap-3"><span class="text-accent-500">✓</span>Webhook + middleware build</li>
+            <li class="flex gap-3"><span class="text-accent-500">✓</span>Go-live + 30-day baseline capture</li>
+            <li class="flex gap-3"><span class="text-accent-500">✓</span>50% kickoff · 50% go-live</li>
+          </ul>
+        </div>
+        <div class="bg-ink-800 border-2 border-accent-500 rounded-xl p-8 relative">
+          <span class="absolute -top-3 left-8 bg-accent-500 text-ink-900 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded">Performance-gated</span>
+          <p class="text-slate-400 text-sm uppercase tracking-wide font-medium mb-2">Monthly</p>
+          <p class="text-5xl font-extrabold mb-6">$497<span class="text-xl text-slate-400 font-medium">/mo</span></p>
+          <ul class="space-y-3 text-slate-300">
+            <li class="flex gap-3"><span class="text-accent-500">✓</span>Weekly prompt tuning</li>
+            <li class="flex gap-3"><span class="text-accent-500">✓</span>Monday metrics email</li>
+            <li class="flex gap-3"><span class="text-accent-500">✓</span>Minor changes &amp; additions</li>
+            <li class="flex gap-3"><span class="text-accent-500">✓</span>6-month minimum once activated</li>
+            <li class="flex gap-3"><span class="text-accent-500">✓</span><span class="font-semibold text-white">Only activates if handle time drops 25%+</span></li>
+          </ul>
+        </div>
+      </div>
+      <p class="mt-8 text-slate-400 text-sm">No hidden fees. No annual prepay. No platform lock-in.</p>
+    </div>
+  </section>
+
+  <!-- Who this fits -->
+  <section class="border-t border-slate-800 bg-ink-800">
+    <div class="max-w-5xl mx-auto px-6 py-20">
+      <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-12">Who this fits</h2>
+      <div class="grid md:grid-cols-2 gap-10">
+        <div>
+          <h3 class="text-lg font-semibold text-accent-500 mb-4">✓ Fits well</h3>
+          <ul class="space-y-3 text-slate-300">
+            <li>US SaaS / software, 50–500 employees</li>
+            <li>Ticket volume 500–5,000/week</li>
+            <li>Using Zendesk, Intercom, HelpScout, or Freshdesk</li>
+            <li>L1 team of 2–10 agents</li>
+            <li>Head of Support or Director of CX making the call</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="text-lg font-semibold text-slate-400 mb-4">✗ Not a fit</h3>
+          <ul class="space-y-3 text-slate-400">
+            <li>Sub-50-person companies (too early, too low volume)</li>
+            <li>Enterprise Fortune 500 (buy Decagon or Ada)</li>
+            <li>Full L1 replacement goal (I augment, not replace)</li>
+            <li>Non-English markets</li>
+            <li>Voice / phone as the primary channel</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="border-t border-slate-800">
+    <div class="max-w-4xl mx-auto px-6 py-20">
+      <h2 class="text-3xl sm:text-4xl font-bold tracking-tight mb-12">Questions you'd ask</h2>
+      <div class="space-y-6">
+        <details class="bg-ink-800 rounded-lg p-6 group" open>
+          <summary class="font-semibold cursor-pointer flex justify-between items-center">
+            How is this different from Zendesk AI Agents or Intercom Fin?
+            <span class="text-accent-500 text-xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <p class="mt-4 text-slate-300 leading-relaxed">Those are full agent-replacement plays at $50k+/year price points. I sit on top of your existing helpdesk and make your existing L1 team 30–50% faster. Different bet, different price, different implementation depth. Usually the right call for sub-500-person SaaS.</p>
+        </details>
+        <details class="bg-ink-800 rounded-lg p-6 group">
+          <summary class="font-semibold cursor-pointer flex justify-between items-center">
+            Who owns the prompts and data?
+            <span class="text-accent-500 text-xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <p class="mt-4 text-slate-300 leading-relaxed">You do. Full export on request. Prompts are tuned for your business — they're yours when the engagement ends.</p>
+        </details>
+        <details class="bg-ink-800 rounded-lg p-6 group">
+          <summary class="font-semibold cursor-pointer flex justify-between items-center">
+            Where does data live?
+            <span class="text-accent-500 text-xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <p class="mt-4 text-slate-300 leading-relaxed">Encrypted in-transit and at-rest. Postgres hosted on Neon (US-east). SOC 2 in progress. No ticket data goes to third-party analytics. Anthropic has enterprise data controls for zero retention on Claude API calls.</p>
+        </details>
+        <details class="bg-ink-800 rounded-lg p-6 group">
+          <summary class="font-semibold cursor-pointer flex justify-between items-center">
+            Can I cancel the monthly?
+            <span class="text-accent-500 text-xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <p class="mt-4 text-slate-300 leading-relaxed">Yes — 30-day notice after the 6-month minimum. Or earlier if the 25% guarantee doesn't hit. Setup is non-refundable after we've done the work.</p>
+        </details>
+        <details class="bg-ink-800 rounded-lg p-6 group">
+          <summary class="font-semibold cursor-pointer flex justify-between items-center">
+            You're in Morocco — what about timezone?
+            <span class="text-accent-500 text-xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <p class="mt-4 text-slate-300 leading-relaxed">I work US hours for US clients. Casablanca is 4–7 hours ahead of US timezones depending on DST. Reply SLA is ≤ 2 hours during US business hours for active clients.</p>
+        </details>
+        <details class="bg-ink-800 rounded-lg p-6 group">
+          <summary class="font-semibold cursor-pointer flex justify-between items-center">
+            Can I see it working before committing?
+            <span class="text-accent-500 text-xl group-open:rotate-45 transition-transform">+</span>
+          </summary>
+          <p class="mt-4 text-slate-300 leading-relaxed">Yes — book the 15-min call. I'll screen-share a sandbox Zendesk showing ticket in → category applied → L1 draft appears. No real client data shown, ever.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="border-t border-slate-800 bg-ink-800">
+    <div class="max-w-3xl mx-auto px-6 py-20 text-center">
+      <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight leading-tight">Let's see if it fits your stack.</h2>
+      <p class="mt-5 text-slate-300 text-lg">15-min call. No slides. I'll show the flow on a sandbox helpdesk, we'll talk through your ticket volume, and you'll know if this is a yes or no by the end.</p>
+      <a href="https://cal.com/said-belakbir/discovery" class="mt-8 inline-block bg-accent-500 text-ink-900 font-semibold px-8 py-4 rounded-md text-lg hover:bg-accent-600">Book 15 min →</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-800">
+    <div class="max-w-5xl mx-auto px-6 py-10 flex flex-col sm:flex-row gap-4 justify-between items-center text-sm text-slate-500">
+      <div>
+        <p class="text-slate-300 font-semibold">Ocatagroup</p>
+        <p>AI support automation · Said Belakbir</p>
+      </div>
+      <div class="flex gap-6">
+        <a href="mailto:said@getocata.com" class="hover:text-slate-200">said@getocata.com</a>
+        <a href="https://cal.com/said-belakbir/discovery" class="hover:text-slate-200">Book a call</a>
+      </div>
+      <p>© 2026 Ocatagroup</p>
+    </div>
+  </footer>
+
+</body>
+</html>
